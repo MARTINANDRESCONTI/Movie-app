@@ -1,0 +1,101 @@
+.header {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--appBrown);
+  border-bottom: solid 2px gray;  
+  z-index: 3;
+}
+
+.title {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  color: white;  
+}
+
+.title h1 {
+  font-size: 30px;
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.options {
+  width: 50vw;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;  
+  justify-content: space-around;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  border: solid 2px var(--appVeige);
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.option:hover {
+  background-color: var(--appVeige);
+}
+
+.option:visited { text-decoration: none; color: var(--appBlack); }
+.option:focus { text-decoration: none; color:var(--appBlack); } 
+.option:active { text-decoration: none; color:var(--appVeige); }
+/* 
+.body {
+  height: 95%;
+  width: 100%;
+  background-image: url('./assets/place.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 20px;  
+}
+
+.bkg {
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(16px);  
+  background-color: rgba(240, 248, 255, 0.672);
+} */
+/* 
+.pagecontainer {
+  position: absolute;
+  top: 55px;
+  left: 0px;  
+  height: 400px;
+  width: 100%;
+  z-index: 3;
+} */
+
+@media screen and (max-width: 600px) {
+  .title h1 {
+    font-size: 22px;
+  }
+
+  .option {
+    font-size: 14px;
+  }
+}
+
+
