@@ -14,7 +14,7 @@ export default function Home() {
       </div>
       <div className={style.body}>
         <p className={style.p}>
-          Hi! Movie's searcher app using <TbBrandNextjs /> <FaReact />  <RiJavascriptLine /> <TbBrandRedux />.
+          Hi! This is a movie's searcher app using <TbBrandNextjs /> <FaReact />  <RiJavascriptLine /> <TbBrandRedux />.
         </p>
         <br></br>
         <h3>

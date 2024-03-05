@@ -54,39 +54,11 @@
   text-decoration: none;
 }
 
-.option:hover {
-  background-color: var(--appVeige);
-}
+.option:hover { background-color: var(--appVeige);}
+.option:active { text-decoration: none; color:var(--appVeige); }
 
 .option:visited { text-decoration: none; color: var(--appBlack); }
 .option:focus { text-decoration: none; color:var(--appBlack); } 
-.option:active { text-decoration: none; color:var(--appVeige); }
-/* 
-.body {
-  height: 95%;
-  width: 100%;
-  background-image: url('./assets/place.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 20px;  
-}
-
-.bkg {
-  height: 100%;
-  width: 100%;
-  backdrop-filter: blur(16px);  
-  background-color: rgba(240, 248, 255, 0.672);
-} */
-/* 
-.pagecontainer {
-  position: absolute;
-  top: 55px;
-  left: 0px;  
-  height: 400px;
-  width: 100%;
-  z-index: 3;
-} */
 
 @media screen and (max-width: 600px) {
   .title h1 {
