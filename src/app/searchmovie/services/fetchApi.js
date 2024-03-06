@@ -1,4 +1,30 @@
 const apiKey = process.env.NEXT_PUBLIC_APIKEY
+// import { useDispatch } from "react-redux";
+// import { getMovie } from "@/app/store/sliceMovies";
+
+// const fetchApi = async (inputMovie, setMovieArray) => {
+  const fetchApi = async (inputMovie) => {
+  try {
+    // const dispatch = useDispatch();
+
+    const response = await fetch(`http://www.omdbapi.com/?t=${inputMovie}&apikey=${apiKey}`, {
+      cache: 'no-store'})
+      const res = await response.json()
+      console.log('res Api', res)
+      // return setMovieArray(res.Year) 
+      // dispatch(getMovie(res.Title)) 
+      return res.Title 
+    } catch (err){   
+      // throw new Error('movie not found')
+     console.log(err)
+  }
+}
+
+export default fetchApi
+
+
+
+
 // const apiKey = process.env.APIKEY
 
 // const fetchApi = async (inputMovie, setMovieArray) => {
@@ -10,25 +36,6 @@ const apiKey = process.env.NEXT_PUBLIC_APIKEY
 //       const res = await response.json()
 //     setMovieArray(res.Year)     
 // }
-
-const fetchApi = async (inputMovie, setMovieArray) => {
-  try {
-    const response = await fetch(`http://www.omdbapi.com/?t=${inputMovie}&apikey=${apiKey}`, {
-      cache: 'no-store'})
-      const res = await response.json()
-      console.log(res.Title)
-    return setMovieArray(res.Year)   
-  } catch (err){   
-      console.log(err) 
-      throw new Error('movie not found')
-  }
-}
-
-export default fetchApi
-
-
-
-
 
 
 

@@ -5,12 +5,18 @@ import { FaSearch, FaTimes } from "react-icons/fa";
 
 import { useState } from "react";
 import fetchApi from './services/fetchApi';
+import { useSelector } from 'react-redux';
+
+import { useDispatch } from "react-redux";
+import { getMovie } from "@/app/store/sliceMovies";
 
 
 
 export default function page() {
+    const dispatch = useDispatch();
   
-    const [movieArray, setMovieArray] = useState('')
+    // const [movieArray, setMovieArray] = useState('')
+    const movie = useSelector((state)=>state.movieArray.moviesLoaded)
     const [inputMovie, setInputMovie] = useState('')
 
     function handleChange (event) {
@@ -21,9 +27,11 @@ export default function page() {
       setInputMovie('')
   }
   
-    function handleFetch (e) {
+    async function handleFetch (e) {
       e.preventDefault();
-      fetchApi(inputMovie,setMovieArray)
+      // fetchApi(inputMovie,setMovieArray)
+      const fetch = await fetchApi(inputMovie)
+      dispatch(getMovie(fetch)) 
       setInputMovie('') 
     }
 
@@ -44,7 +52,8 @@ export default function page() {
           <div onClick={clearInput}><FaTimes /></div>
       </form>
       <div>
-        {movieArray}
+        {/* {movieArray} */}
+        {movie}
       </div>
     </div>
   )
