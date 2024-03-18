@@ -1,0 +1,123 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;
+  flex: 1;
+  border: solid 1px gray;
+  border-radius: 15px; 
+  box-shadow: 10px 5px 5px gray; 
+  background-color: var(--appWhite);
+}
+
+.leftContainer {  
+  height: 100%;
+  width: 50%;
+  /* border-right: solid rgba(174, 167, 167, 0.327) 2px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  /* background-color: blueviolet; */
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+  /* -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  flex: 1; */
+}
+
+.actorsContainer,
+.directorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px; 
+  text-align: center;
+}
+
+.actorsContainer > h3,
+.directorContainer > h3{
+  font-weight: bold;
+}
+
+.year {
+  font-size: 20px;
+  font-weight: bold
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 30px;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 600;
+  border-radius: 50px;
+  border: 0;
+  background-color: var(--appRed);
+  color: white;
+  text-decoration: none;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.rightContainer {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex: 1;   */
+  /* background-color: green; */
+}
+
+/* .rightContainer > h2 {  
+  font-size: 30px;
+  text-align: center;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  flex: 1;  
+  position: relative;
+  z-index: 1;
+} */
+
+.img {
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute; */
+  overflow: hidden;
+  /* object-fit: cover; */
+  /* z-index: 0; */
+  /* background-color: pink; */
+}
+
+/* @media screen and (max-width: 600px) {
+  .title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .button {
+      width: 130px;
+      font-size: 16px;
+  }
+
+  .icon {
+    height: 100px;
+    width: 100px;
+  }
+} */

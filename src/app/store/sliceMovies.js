@@ -11,7 +11,7 @@ export const movieSlice = createSlice({
   initialState,
   reducers:{
     getMovie: (state,action)=>{
-      state.moviesLoaded = [...state.moviesLoaded,action.payload]
+      state.moviesLoaded = [...state.moviesLoaded, action.payload]
     },
     addMovieFavorite: (state,action)=>{},
     deleteMovie: (state,action)=>{}

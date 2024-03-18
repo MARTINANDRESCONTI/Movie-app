@@ -13,10 +13,10 @@ const apiKey = process.env.NEXT_PUBLIC_APIKEY
       console.log('res Api', res)
       // return setMovieArray(res.Year) 
       // dispatch(getMovie(res.Title)) 
-      return res.Title 
+      return res
     } catch (err){   
       // throw new Error('movie not found')
-     console.log(err)
+     console.log('I am in error', err)
   }
 }
 

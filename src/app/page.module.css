@@ -8,7 +8,7 @@
 }
 
 .title {
-  height: 70px;
+  height: 80px;
   width: 100vw;
   text-align: center;
   font-size: 50px;  
@@ -28,3 +28,27 @@
   font-size: 30px;
   text-align: center;
 }
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 150px; */
+  width: max-content;
+  height: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  border: solid 2px var(--appRed);
+  border-radius: 50px;
+  text-decoration: none;
+  padding: 20px 20px;
+  color: var(--appRed);
+  background-color: var(--appWhite);
+}
+
+.option:hover { background-color: var(--appVeige);}
+.option:active { text-decoration: none; color:var(--appRed); }
+
+.option:visited { text-decoration: none; color: var(--appRed); }
+.option:focus { text-decoration: none; color:var(--appRed); } 
