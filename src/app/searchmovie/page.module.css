@@ -4,26 +4,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  /* background-color: blue; */
+  justify-content: flex-start;
 }
 
 .containerheader {
-  height: 100%;
-  width: 70%;
+  height: fit-content;
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  /* background-color: orange; */
-  padding: 1%;
+  align-items: center;
+  padding: 15px 0px 10px 0px;
+  gap: 5px;
 }
 
 .title {
-  height: max-content;
-  width: max-content;
-  font-size: 50px;
-  margin-right: 15px;
+  font-size: 30px;
 }
 
 .searchBar {
@@ -31,26 +26,22 @@
   width: max-content;
 }
 
-.citysearched {
-  margin-top: 20px;
+.searched {
+  margin-top: 0px;
   height: 100%;
-  width: 80%;
-  /* background-color: red; */
+  width: 100%;
   border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-/* 
-.transparent {
+
+.ul {
   height: 100%;
-  width: 100%;
-  border-radius: 15px;
-  background-color: transparent;
-  background-repeat: none;
-  background-size: cover;
-  opacity: 0.8;
-} */
+  width: fit-content;
+  list-style-type: none;
+  padding: 0px 10px;
+}
 
 @media screen and (max-width: 600px) {
   .containerheader {

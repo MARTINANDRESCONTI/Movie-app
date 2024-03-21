@@ -1,12 +1,12 @@
 import React from 'react'
 
-import style from './searchedMovie.module.css'
+import style from './movieDetail.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import 'animate.css';
 
 
-export default function SearchedCard(props) {
+export default function MovieDetail(props) {
   return (
     <div className='animate__animated animate__fadeIn'>
       <div className={style.container}>

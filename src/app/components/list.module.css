@@ -1,0 +1,108 @@
+/* .container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;
+  flex: 1;
+  border: solid 1px gray;
+  border-radius: 15px; 
+  box-shadow: 10px 5px 5px gray; 
+  background-color: var(--appWhite);
+} */
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;  
+  margin: 3px 0px;
+}
+
+.textButtonContainer {
+  gap: 10px;
+  display: flex;
+}
+
+.buttondetail {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: var(--appBrown);
+  color: var(--appBlack);
+  border: 1px solid var(--appBlack);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.icondetail {
+  color: var(--appBlack);
+  height: 20px;
+  width: 20px;
+}
+
+.buttondetail:hover {
+  background-color:  #d7c0ae7b;;
+  color: var(--appRed);
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  
+}
+
+.title{
+  font-size: 16px;
+  font-weight: 400;  
+}
+
+.year{
+  font-size: 20px;
+}
+
+.button {
+  height: 30px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: var(--appBrown);
+  color: var(--appBlack);
+  border: 1px solid var(--appBlack);
+  border-radius: 5px;
+  cursor: pointer;
+  gap: 3px;
+}
+
+.icon {
+  color: var(--appBlack);
+  height: 30px;
+  width: 30px;
+}
+
+.button:hover {
+  background-color:  #d7c0ae7b;;
+  color: var(--appRed);
+}
+
+@media screen and (max-width: 600px) {
+
+
+  .button {
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+  }
+
+}

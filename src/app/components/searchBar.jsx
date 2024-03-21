@@ -6,8 +6,9 @@ import { useState } from "react";
 import { useDispatch } from 'react-redux';
 import { getMovie } from '../store/sliceMovies';
 import style from './searchBar.module.css';
+import { fetchApi } from '../searchmovie/services/fetchApi';
 
-export default function SearchBar({fetchApi}) {
+export default function SearchBar() {
 
   const [input, setInput] = useState('')
   const dispatch = useDispatch();
