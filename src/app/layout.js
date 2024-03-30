@@ -4,6 +4,7 @@ import "./globals.css";
 import Footer from "@/app/components/footer";
 import Header from "./components/header";
 import Providers from "./store/provider";
+import style from "./layout.module.css"
 
 const poppins = Poppins({ 
   subsets: ["latin"],
@@ -20,9 +21,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Providers>
         <body className={poppins.className}> 
-          <Header />      
-          {children}
-          <Footer />
+          <div className={style.container}>
+            <Header />      
+            {children}
+            <Footer />
+          </div>
         </body>
       </Providers>
     </html>

@@ -13,6 +13,7 @@
 } */
 
 .container{
+  width: 120%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,16 +53,23 @@
 }
 
 .text {
+  width: 100%;
   display: flex;
   align-items: center;
-  gap: 5px;
-  
+  gap: 15px;  
 }
 
 .title{
   font-size: 16px;
   font-weight: 400;  
+  text-decoration: none;
+  color: var(--appBlack);
 }
+
+.title:hover {color: var(--appRed);}
+.option:active, 
+.option:visited, 
+.option:focus { text-decoration: none; color:var(--appBlack); } 
 
 .year{
   font-size: 20px;
@@ -75,23 +83,22 @@
   justify-content: center;
   font-size: 16px;
   font-weight: 400;
-  background-color: var(--appBrown);
-  color: var(--appBlack);
-  border: 1px solid var(--appBlack);
+  background-color: var(--appBlack);
+  color: var(--appWhite);
+  /* border: 1px solid var(--appBlack); */
   border-radius: 5px;
   cursor: pointer;
   gap: 3px;
 }
 
 .icon {
-  color: var(--appBlack);
+  color: var(--appWhite);
   height: 30px;
   width: 30px;
 }
 
 .button:hover {
-  background-color:  #d7c0ae7b;;
-  color: var(--appRed);
+  background-color:  gray;
 }
 
 @media screen and (max-width: 600px) {

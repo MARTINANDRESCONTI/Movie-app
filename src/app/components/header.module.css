@@ -55,10 +55,9 @@
 }
 
 .option:hover { background-color: var(--appVeige);}
-.option:active { text-decoration: none; color:var(--appVeige); }
-
+.option:active { text-decoration: none; color:var(--appRed); }
 .option:visited { text-decoration: none; color: var(--appBlack); }
-.option:focus { text-decoration: none; color:var(--appBlack); } 
+.option:focus { text-decoration: none; background-color:var(--appVeige); } 
 
 @media screen and (max-width: 600px) {
   .title h1 {

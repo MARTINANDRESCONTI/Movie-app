@@ -3,7 +3,9 @@ import martinIcon from '../../../public/martinIcon.svg';
 import style from './header.module.css'
 import Link from 'next/link'
 
+
 export default function Header() {  
+  
   return ( 
       <header className={style.header}> 
         <div className={style.title}>
