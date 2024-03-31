@@ -1,8 +1,110 @@
-.container {  
-  height:fit-content;
+.container { 
+  height: fit-content;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  justify-content:flex-start;
+  background-color: linear-gradient( var(--appVeige), var(--appBrown));
+}
+
+.nomovie {
+  font-size: 25px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  height: 100%;
+  width: 100%;
+}
+
+.movieContainer {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+  grid-template-rows: max-content;
+  column-gap: 5px;
+  row-gap: 5px;
+  justify-items: center;
+  padding: 15px 5px; 
+  background: linear-gradient(var(--appBrown), var(--appVeige));
+
+}
+
+.card {
+  width: 300px;
+  height: 350px;
+  position: relative;
+  background-color: var(--appBlack);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.notfound {
+  height: 350px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  gap: 5px;
+  padding: 60px 5px;
+}
+
+.notfound > h3 {
+  color: white;
+  font-size: 18px;
+}
+
+.notfound > p {
+  color: white;
+  font-size: 16px;
+}
+
+.image{
+  position: relative;
+  /* width: 300px;
+  height: 350px; */
+  
+  /* z-index: 0;
+  flex: 1; */
+}
+
+.deleteList {
+  position:absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 50px;
+  border: solid var(--appBlack) 0.5px;
+  box-shadow: 5px 3px 7px white;
+  background-color: var(--appRed);
+  color: white;
+  text-decoration: none;
+  gap: 5px;
+  z-index: 3;
+}
+
+/* 
+.movieContainer {
+  background-color: red;
+} */
+
+/* @media screen and (max-width: 800px) {
+  .container{
+    height: fit-content;
+  }
+} */
+.deleteList:hover {
+  opacity: 0.8;
+  box-shadow: none;
 }

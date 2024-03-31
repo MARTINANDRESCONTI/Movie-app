@@ -14,7 +14,7 @@ export default function List(props) {
         </Link>  
         <div className={style.text}>
           <Link href={`/searchmovie/${props.title}`} className={style.title}>
-            <h2 className={style.title}>{props.title}</h2>
+            <h2 className={style.title} onClick={props.getdetail}>{props.title}</h2>
           </Link>
           <p>{props.year}</p>       
         </div> 

@@ -22,10 +22,19 @@ export const movieSlice = createSlice({
     addMovieFavorite: (state,action)=>{
       state.moviesFavourites = [action.payload, ...state.moviesFavourites]
     },
-    deleteMovie: (state,action)=>{}
+    deleteMovieFavourites: (state,action)=>{
+      state.moviesFavourites = state.moviesFavourites.filter( e => e.imdbID !== action.payload)
+    }
   }
 
 })
 
-export const {getMovie, deleteMovieList, getMovieDetail, addMovieFavorite ,deleteMovie} = movieSlice.actions
+export const {
+  getMovie, 
+  deleteMovieList, 
+  getMovieDetail, 
+  addMovieFavorite , 
+  deleteMovie, 
+  deleteMovieFavourites
+} = movieSlice.actions
 export default movieSlice.reducer

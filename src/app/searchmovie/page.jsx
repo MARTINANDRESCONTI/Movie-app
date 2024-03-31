@@ -16,6 +16,7 @@ import { FaTrashAlt } from "react-icons/fa";
 
 export default function page() {
   const movie = useSelector((state)=>state.movieArray.moviesLoaded[0])
+  const favoriteMovie = useSelector((state)=>state.movieArray.moviesFavourites)
   const dispatch = useDispatch();
 
   useEffect(()=>{
@@ -29,7 +30,10 @@ export default function page() {
 
   function addfavorite (idmov){
     const movfav = movie.Search.find(e => e.imdbID == idmov)
-    dispatch(addMovieFavorite(movfav))
+    const movaddfav = favoriteMovie.find(e => e.imdbID == idmov)
+    console.log(favoriteMovie)
+    console.log(movaddfav)
+    if(movaddfav == undefined) dispatch(addMovieFavorite(movfav))
   }
 
   function deleteList (){
