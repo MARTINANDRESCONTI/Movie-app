@@ -18,13 +18,11 @@ export default function Header() {
           </a>
           <h1>Movie App</h1>      
         </div> 
-        <nav>
-          <div className={style.options}>
-            <Link className={style.option} href='/'><div>Home</div></Link>
-            <Link  className={style.option} href='/searchmovie'><div>Search</div></Link>  
-            <Link className={style.option} href='/favorites'><div >Favorites</div> </Link>             
-          </div>   
-        </nav>      
+        <div className={style.options}>
+          <Link className={style.option} href='/'><div>Home</div></Link>
+          <Link  className={style.option} href='/searchmovie'><div>Search</div></Link>  
+          <Link className={style.option} href='/favorites'><div >Favorites</div> </Link>             
+        </div>   
       </header>
   )
 }

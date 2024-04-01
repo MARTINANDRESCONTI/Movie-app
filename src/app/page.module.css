@@ -1,17 +1,22 @@
 .container {
-  height: calc(100% - 7rem);
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 }
 
 .title {
   height: 80px;
-  width: 100vw;
+  width: 100%;
   text-align: center;
-  font-size: 50px;  
+}
+
+.title > h3 {
+  font-size: 50px;
+  font-weight: 700;
 }
 
 .body {
@@ -20,11 +25,11 @@
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
-.p {
+.hi {
   font-size: 30px;
   text-align: center;
 }
@@ -33,7 +38,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* width: 150px; */
   width: max-content;
   height: 30px;
   cursor: pointer;
@@ -52,3 +56,45 @@
 
 .option:visited { text-decoration: none; color: var(--appRed); }
 .option:focus { text-decoration: none; color:var(--appRed); } 
+
+@media screen and (max-width: 700px) {
+  .title {
+    height: 45px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .title > h3 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .hi {
+    font-size: 20px;
+  }
+
+  .option {
+    font-size: 14px;
+    font-weight: 500;    
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title {
+    height: 30px;
+  }
+
+  .title > h3 {
+    font-size: 25px;
+  }
+  
+  .hi {
+    font-size: 16px;
+  }
+
+  .option {
+    font-size: 12px;
+    font-weight: 400; 
+    padding: 5px 10px;   
+  }
+}

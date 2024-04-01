@@ -15,19 +15,14 @@ export default function Home() {
         <h3 >Welcome</h3>
       </div>
       <div className={style.body}>
-        <div>  
-          <p className={style.p}>
-            Hi! This is a movie's searcher app using <TbBrandNextjs /> <FaReact />  <RiJavascriptLine /> <TbBrandRedux />.
-          </p>
-        </div>
-        <br></br>
-        <div> 
-          <Link className={style.option} href='/searchmovie'>
-            <h3 >
-              Search the movie of your choise.      
-            </h3>        
-          </Link>
-        </div>
+        <h2 className={style.hi}>
+          Hi! This is a movie's searcher app using <TbBrandNextjs /> <FaReact />  <RiJavascriptLine /> <TbBrandRedux />.
+        </h2>
+        <Link className={style.option} href='/searchmovie'>
+          <h3 >
+            Search the movie of your choise.      
+          </h3>        
+        </Link>
       </div>      
     </div>
   )

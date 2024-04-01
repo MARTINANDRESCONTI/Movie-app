@@ -12,15 +12,16 @@
 }
 
 .title {
+  width: 30%;
   display: flex;
-  gap: 10px;
-  justify-content: center;
+  gap: 15px;
+  justify-content: flex-start;
   align-items: center;
   color: white;  
 }
 
-.title h1 {
-  font-size: 30px;
+.title > h1 {
+  font-size: 20px;
 }
 
 .logo {
@@ -32,19 +33,20 @@
 }
 
 .options {
-  width: 50vw;
+  width: 70%;
   height: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;  
-  justify-content: space-around;
+  justify-content: flex-end;
+  gap: 15px;
 }
 
 .option {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 150px;
+  width: 130px;
   height: 30px;
   cursor: pointer;
   font-size: 16px;
@@ -59,13 +61,32 @@
 .option:visited { text-decoration: none; color: var(--appBlack); }
 .option:focus { text-decoration: none; background-color:var(--appVeige); } 
 
-@media screen and (max-width: 600px) {
-  .title h1 {
-    font-size: 22px;
+@media screen and (max-width: 700px) {
+  .header {
+    padding: 5px 15px;
+  }
+
+  .title > h1 {
+    display: none;
+  }
+
+  .options {
+    gap: 5px;
   }
 
   .option {
-    font-size: 14px;
+    width: 120px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title {
+    width: 20%;
+  }
+
+  .options {
+    width: 80%;
   }
 }
 

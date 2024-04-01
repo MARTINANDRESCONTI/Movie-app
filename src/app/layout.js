@@ -1,9 +1,9 @@
 import { Poppins } from "next/font/google";
 
 import "./globals.css";
-import Footer from "@/app/components/footer";
 import Header from "./components/header";
 import Providers from "./store/provider";
+import Footer from "./components/Footer";
 import style from "./layout.module.css"
 
 const poppins = Poppins({ 
@@ -24,7 +24,9 @@ export default function RootLayout({ children }) {
           <div className={style.container}>
             <Header />      
             {children}
-            <Footer />
+            <div className={style.footer}>
+              <Footer />
+            </div>
           </div>
         </body>
       </Providers>

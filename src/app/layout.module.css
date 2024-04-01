@@ -5,3 +5,9 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+@media screen and (max-height: 400px) {
+  .footer {
+    display: none;
+  }
+}
