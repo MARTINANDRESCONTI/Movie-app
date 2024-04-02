@@ -1,6 +1,5 @@
 .container {
-  height: 100%;
-  width: 50%;
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,21 +15,16 @@
 .leftContainer {  
   height: 100%;
   width: 50%;
-  /* border-right: solid rgba(174, 167, 167, 0.327) 2px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 5px;
-  /* background-color: blueviolet; */
 }
 
 .title {
   font-size: 30px;
   text-align: center;
-  /* -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: white;
-  flex: 1; */
 }
 
 .actorsContainer,
@@ -50,7 +44,7 @@
 
 .year {
   font-size: 20px;
-  font-weight: bold
+  font-weight: bold;
 }
 
 .button {
@@ -79,46 +73,157 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* flex: 1;   */
-  /* background-color: green; */
 }
 
-/* .rightContainer > h2 {  
-  font-size: 30px;
-  text-align: center;
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: white;
-  flex: 1;  
-  position: relative;
-  z-index: 1;
-} */
-
 .img {
-  height: 300px;
-  width: 300px;
+  height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* position: absolute; */
   overflow: hidden;
-  /* object-fit: cover; */
-  /* z-index: 0; */
-  /* background-color: pink; */
 }
 
-/* @media screen and (max-width: 600px) {
+.notfound {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 90%;
+    box-shadow: 5px 5px 5px gray; 
+    margin: 7px;
+  }
+
+  .leftContainer {  
+    height: 100%;
+    width: 40%;
+  }
+
   .title {
     font-size: 20px;
-    text-align: center;
+    font-weight: 600;
+  }
+
+  .actorsContainer > h3 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .actorsContainer > p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .directorContainer > h3 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .directorContainer > p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+
+  .rightContainer {
+    height: 100%;
+    width: 60%;
+  }
+
+  .img {
+    height: 80%;
+    width: 80%;
+  }
+
+  .notfound {
+    height: 80%;
+    width: 80%;
+  }
+
+  .year {
+    font-size: 18px;
+    font-weight: 600;
   }
 
   .button {
-      width: 130px;
-      font-size: 16px;
+    width: 120px;
+    height: 28px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    height: 90%;
+    width: 95%;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px gray; 
+    margin: 7px;
   }
 
-  .icon {
-    height: 100px;
-    width: 100px;
+
+  .leftContainer {  
+    height: 100%;
+    width: 100%;
   }
-} */
+
+  .title {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .actorsContainer > h3 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .actorsContainer > p {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .directorContainer > h3 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .directorContainer > p {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+
+  .rightContainer {
+    height: 100%;
+    width: 100%;
+  }
+
+  .img {
+    height: 95%;
+    width: 90%;
+  }
+
+  .notfound {
+    height: 50%;
+    width: 95%;
+  }
+
+  .year {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .button {
+    width: 120px;
+    height: 24px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}

@@ -26,11 +26,13 @@ export default function MovieDetail(props) {
       <div className={style.rightContainer}>
         <div className={style.img}>
           {props.poster === "N/A" ?
-            'there is not any poster of the movie...' :
+            <div className={style.notfound}>
+              'there is not any poster of the movie...'
+            </div> :
             <Image             
               src={props.poster} 
+              height={400}
               width={300}
-              height={300}
               alt='movie poster'  
             />
           }

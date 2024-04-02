@@ -24,6 +24,7 @@ export default function page() {
   },[])
 
   async function handleFetchDetail (id) {
+      dispatch(getMovieDetail({})) 
       const fetch = await fetchApiDetail(id)
       dispatch(getMovieDetail(fetch)) 
     }

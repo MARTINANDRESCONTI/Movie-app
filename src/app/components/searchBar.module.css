@@ -40,3 +40,9 @@
   background-color:white;
   color: var(--appRed);
 }
+
+@media screen and (max-width: 700px) {
+  .labinputcontainer {
+    height: 30px;
+  }  
+}

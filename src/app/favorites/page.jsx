@@ -19,6 +19,7 @@ export default function Favorites() {
   }
 
   async function handleFetchDetail (id) {
+      dispatch(getMovieDetail({})) 
       const fetch = await fetchApiDetail(id)
       dispatch(getMovieDetail(fetch)) 
     }
@@ -29,9 +30,7 @@ export default function Favorites() {
       <div className={style.movieContainer}>     
           {movie.map(e =>{
             return (
-            // <Link href={`/searchmovie/${e.Title}`}>
-              <div key={e.imdbID} id={e.imdbID} 
-              // onClick={ ()=> handleFetchDetail(e.imdbID)} 
+              <div key={e.imdbID} id={e.imdbID}  
               className={style.card}>          
                 {e.Poster === "N/A" ?
                   <Link href={`/searchmovie/${e.Title}`}>
