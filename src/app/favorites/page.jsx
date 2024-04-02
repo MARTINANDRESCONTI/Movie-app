@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import Image from 'next/image'
 import style from './page.module.css'
