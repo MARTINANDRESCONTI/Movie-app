@@ -24,7 +24,6 @@ export default function page() {
   },[])
 
   async function handleFetchDetail (id) {
-      dispatch(getMovieDetail({})) 
       const fetch = await fetchApiDetail(id)
       dispatch(getMovieDetail(fetch)) 
     }
@@ -32,8 +31,6 @@ export default function page() {
   function addfavorite (idmov){
     const movfav = movie.Search.find(e => e.imdbID == idmov)
     const movaddfav = favoriteMovie.find(e => e.imdbID == idmov)
-    console.log(favoriteMovie)
-    console.log(movaddfav)
     if(movaddfav == undefined) dispatch(addMovieFavorite(movfav))
   }
 

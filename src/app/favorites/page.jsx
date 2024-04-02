@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-
+import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import Image from 'next/image'
 import style from './page.module.css'
@@ -13,6 +13,10 @@ import Link from 'next/link'
 export default function Favorites() {
   const movie = useSelector((state)=>state.movieArray.moviesFavourites)
   const dispatch = useDispatch()
+
+  useEffect(()=>{
+    dispatch(getMovieDetail({}))
+  },[])
 
   function deleteMovie (id) {
     dispatch(deleteMovieFavourites(id))
@@ -55,7 +59,6 @@ export default function Favorites() {
                   <button onClick={() => deleteMovie(e.imdbID)} className={style.deleteList}><FaTrashAlt /></button> 
                 </div>
               </div>
-            // </Link>
             )
           })
           }
