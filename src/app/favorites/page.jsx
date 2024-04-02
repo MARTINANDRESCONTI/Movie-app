@@ -40,7 +40,7 @@ export default function Favorites() {
                   <Link href={`/searchmovie/${e.Title}`}>
                     <div className={style.notfound} onClick={ ()=> handleFetchDetail(e.imdbID)} >
                       <h3>{e.Title}</h3>
-                      <p>'there is not any poster of the movie...'</p>
+                      <p>there is not any poster of the movie...</p>
                     </div>
                   </Link>
                   : 
