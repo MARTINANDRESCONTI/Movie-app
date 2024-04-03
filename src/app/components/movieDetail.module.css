@@ -142,8 +142,8 @@
   }
 
   .notfound {
-    height: 80%;
-    width: 80%;
+    height: 100%;
+    width: 100%;
   }
 
   .year {
@@ -211,7 +211,7 @@
   }
 
   .notfound {
-    height: 50%;
+    height: 100%;
     width: 95%;
   }
 

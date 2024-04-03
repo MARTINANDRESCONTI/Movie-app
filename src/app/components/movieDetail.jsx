@@ -27,7 +27,7 @@ export default function MovieDetail(props) {
         <div className={style.img}>
           {props.poster === "N/A" ?
             <div className={style.notfound}>
-              there is not any poster of the movie...
+              Poster not found...
             </div> :
             <Image             
               src={props.poster} 
