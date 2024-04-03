@@ -2,7 +2,7 @@ const apiKey = process.env.NEXT_PUBLIC_APIKEY
 
 export const fetchApi = async (inputMovie) => {
   try {
-    const response = await fetch(`http://www.omdbapi.com/?s=${inputMovie}&apikey=${apiKey}`, {
+    const response = await fetch(`https://www.omdbapi.com/?s=${inputMovie}&apikey=${apiKey}`, {
       cache: 'no-store'})
       const res = await response.json()
       console.log('res Api', res)
@@ -14,7 +14,7 @@ export const fetchApi = async (inputMovie) => {
 
 export const fetchApiDetail = async (id) => {
   try {
-    const response = await fetch(`http://www.omdbapi.com/?i=${id}&apikey=${apiKey}`, {
+    const response = await fetch(`https://www.omdbapi.com/?i=${id}&apikey=${apiKey}`, {
       cache: 'no-store'})
       const res = await response.json()
       console.log('res Api detail', res)
