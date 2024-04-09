@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 5px;
-  background-color: var(--appRed);
+  background-color: var(--appBlack);
   color: var(--appWhite);   
 }
 
@@ -24,7 +24,10 @@
 }
 
 .social {
+  display: flex;
+  justify-content: flex-end;
   cursor: pointer;  
+  gap: 15px;
 }
 
 .social a { color:white } 
@@ -45,7 +48,9 @@
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around;    
-    padding: 0px;    
+    padding: 15px; 
+    gap: 10px;
+
   }
 
   .contact {
@@ -67,6 +72,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 15px;
   }
 
   .social > a {
@@ -90,8 +96,7 @@
     height: fit-content; 
     display: flex;
     flex-direction: column-reverse;
-    justify-content: space-around;    
-    padding: 0px;    
+    justify-content: space-around;  
   }
 
   .contact {
@@ -99,6 +104,7 @@
     flex-direction: column;
     align-items: center;
     height: fit-content;
+    gap: 10px;
     margin: 0;
   }
 

@@ -47,17 +47,17 @@
   align-items: center;
   justify-content: center;
   width: 130px;
-  height: 30px;
+  height: 40px;
   cursor: pointer;
   font-size: 16px;
   font-weight: 700;
-  border: solid 2px var(--appVeige);
+  border: solid 2px var(--appBlack);
   border-radius: 50px;
   text-decoration: none;
 }
 
 .option:hover { background-color: var(--appVeige);}
-.option:active { text-decoration: none; color:var(--appRed); }
+.option:active { text-decoration: none; color:var(--appBlack); }
 .option:visited { text-decoration: none; color: var(--appBlack); }
 .option:focus { text-decoration: none; background-color:var(--appVeige); } 
 

@@ -29,10 +29,11 @@ export default function MovieDetail(props) {
             <div className={style.notfound}>
               Poster not found...
             </div> :
-            <Image             
+            <Image     
+              className={style.image}        
               src={props.poster} 
-              height={400}
-              width={300}
+              height={800}
+              width={700}
               alt='movie poster'  
             />
           }

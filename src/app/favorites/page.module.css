@@ -24,8 +24,8 @@
   display: grid;
   grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
   grid-template-rows: max-content;
-  column-gap: 5px;
-  row-gap: 5px;
+  column-gap: 10px;
+  row-gap: 10px;
   justify-items: center;
   padding: 15px 5px; 
   background: linear-gradient(var(--appBrown), var(--appVeige));
@@ -33,24 +33,26 @@
 }
 
 .card {
-  width: 300px;
-  height: 350px;
+  width: 280px;
+  height: 330px;
   position: relative;
   background-color: var(--appBlack);
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 5px;
   
 }
 
 .notfound {
-  height: 350px;
-  width: 300px;
+  height: 330px;
+  width: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
   text-align: center;
+  border-radius: 5px;
   gap: 5px;
   padding: 60px 5px;
 }
@@ -67,11 +69,9 @@
 
 .image{
   position: relative;
-  /* width: 300px;
-  height: 350px; */
-  
-  /* z-index: 0;
-  flex: 1; */
+  width: 280px;
+  height: 330px;
+  border-radius: 5px;
 }
 
 .deleteList {

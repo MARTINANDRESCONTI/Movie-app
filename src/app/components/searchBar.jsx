@@ -31,20 +31,18 @@ export default function SearchBar() {
   return (
     <div>
       <form className={style.labinputcontainer} onSubmit={handleFetch}>
-          <button className={style.iconsearch} >
-            <FaSearch />
-          </button>
-          <input 
-            className={style.input} 
-            type='text' name='input' 
-            placeholder='introduce your movie...' 
-            onChange={handleChange}
-            value={input}
-            autoComplete='off'
-            required 
-          />
-          <div className={style.icondelete} onClick={clearInput}><FaTimes /></div>
-        </form>
+        <div className={style.icondelete} onClick={clearInput}><FaTimes /></div>
+        <input 
+          className={style.input} 
+          type='text' name='input' 
+          placeholder='introduce your movie...' 
+          onChange={handleChange}
+          value={input}
+          autoComplete='off'
+          required 
+        />
+        <button className={style.iconsearch}><FaSearch /></button>          
+      </form>
     </div>
   )
 }

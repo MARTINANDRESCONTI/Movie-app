@@ -49,8 +49,8 @@ export default function Favorites() {
                       onClick={ ()=> handleFetchDetail(e.imdbID)}
                       className={style.image}            
                       src={e.Poster} 
-                      width={300}
-                      height={350}
+                      width={280}
+                      height={330}
                       alt='movie poster'  
                     />
                   </Link>         

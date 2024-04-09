@@ -1,6 +1,8 @@
 .container {
-  width: 70%;
+  height: 70%;
+  width: 50%;
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
   box-sizing: content-box;
@@ -9,21 +11,30 @@
   border-radius: 15px; 
   box-shadow: 10px 5px 5px gray; 
   background-color: var(--appWhite);
-  margin: 20px;
+  margin: 10px;
+  position: relative;
 }
 
 .leftContainer {  
-  height: 100%;
-  width: 50%;
+  height: fit-content;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 5px;
+  border-radius: 15px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.787);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
 }
 
 .title {
-  font-size: 30px;
+  font-size: 18px;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -33,29 +44,31 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 16px; 
+  font-size: 14px; 
+  font-weight: 400;
   text-align: center;
 }
 
 .actorsContainer > h3,
 .directorContainer > h3{
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .year {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  height: 30px;
+  width: 150px;
+  height: 40px;
   cursor: pointer;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 700;
   border-radius: 50px;
   border: 0;
   background-color: var(--appRed);
@@ -69,18 +82,30 @@
 
 .rightContainer {
   height: 100%;
-  width: 40%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
-}
+  background-color: var(--appBlack);  
+  border-radius: 15px;
+  position: relative;
+  z-index: 0;
+} 
 
 .img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
+  overflow: hidden;
   display: flex;
-  align-items: center;
   justify-content: center;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
   overflow: hidden;
 }
 
@@ -91,27 +116,27 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--appWhite);
 }
 
 @media screen and (max-width: 700px) {
   .container {
-    width: 90%;
+    height: 80%;
+    width: 80%;
     box-shadow: 5px 5px 5px gray; 
     margin: 7px;
-  }
-
-  .leftContainer {  
-    height: 100%;
-    width: 40%;
+    position: relative;
   }
 
   .title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
   }
 
   .actorsContainer > h3 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
   }
 
@@ -121,7 +146,7 @@
   }
 
   .directorContainer > h3 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
   }
 
@@ -130,100 +155,57 @@
     font-weight: 500;
   }
 
-
-  .rightContainer {
-    height: 100%;
-    width: 60%;
-  }
-
-  .img {
-    height: 80%;
-    width: 80%;
-  }
-
-  .notfound {
-    height: 100%;
-    width: 100%;
-  }
-
   .year {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
   }
 
   .button {
     width: 120px;
-    height: 28px;
+    height: 40px;
     font-size: 14px;
+    font-weight: 600;
+  }
+
+  .notfound {
+    font-size: 18px;
     font-weight: 600;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .container {
-    height: 90%;
-    width: 95%;
-    flex-direction: column;
-    box-shadow: 5px 5px 5px gray; 
-    margin: 7px;
-  }
-
-
-  .leftContainer {  
+ .container {
     height: 100%;
-    width: 100%;
+    width: 90%;
   }
 
   .title {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
   }
 
-  .actorsContainer > h3 {
+  .actorsContainer > h3,
+  .directorContainer > h3,
+  .year {
     font-size: 14px;
     font-weight: 500;
   }
 
-  .actorsContainer > p {
-    font-size: 12px;
-    font-weight: 400;
-  }
-
-  .directorContainer > h3 {
-    font-size: 14px;
-    font-weight: 500;
-  }
-
+  .actorsContainer > p,
   .directorContainer > p {
     font-size: 12px;
     font-weight: 400;
   }
 
-
-  .rightContainer {
-    height: 100%;
-    width: 100%;
-  }
-
-  .img {
-    height: 95%;
-    width: 90%;
+  .button {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 400;
   }
 
   .notfound {
-    height: 100%;
-    width: 95%;
-  }
-
-  .year {
     font-size: 16px;
     font-weight: 500;
-  }
-
-  .button {
-    width: 120px;
-    height: 24px;
-    font-size: 14px;
-    font-weight: 600;
-  }
+  } 
 }
